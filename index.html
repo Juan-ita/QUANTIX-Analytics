@@ -8,30 +8,42 @@
     <script src="https://kit.fontawesome.com/beb9c9acc8.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-950 via-slate-900 to black text-white flex-wrap">
-    <div class="flex h-screen">
-
+    <div class="flex h-screen"> 
+        
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1 z-50">
+                    <i class="fa-solid fa-bars"></i>
+                 </button>
+               
         <!--Sidebar-->
         <aside id="sidebar" class="w-64 bg-black/40 blackdrop-blur-xl border-r border-cyan-500/20 p-6">
+            <div class="hidden md:flex space-x-6">
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+            <label for="menu-toggle"> <i class="fa-solid fa-bars"></i></label>
+            </div>
             <h1 class="text-3xl font-extrabold text-cyan-400 drop-shadow-lg drop-shadow-lg">
                 QUANTIX
             </h1>
             
-            <nav class="space-y-3 text-gray-300 mt-6 p-3">
+            <nav class="space-y-3 text-gray-300 mt-6 p-4">
+                <div class="">
+
+                </div>
+                <div class="max-w-6xl mx-auto flex justify-between items-center relative"></div>
                  <button id="menu-btn" class="md:hidden flex flex-col gap-1 z-50">
                     <i class="fa-solid fa-bars"></i>
                  </button>
-                <p class="hover:text-white cursor-pointer">Dashboard</p>
-                <p class="hover:text-white cursor-pointer">Analytics</p>
-                <p class="hover:text-white cursor-pointer">Reports</p>
-                <p class="hover:text-white cursor-pointer">Users</p>
-                <p class="hover:text-white cursor-pointer">Orders</p>
-                <p class="hover:text-white cursor-pointer">Settings</p>
+                <a href="#" class="block hover:text-white cursor-pointer">Analytics</a>
+                <a href="#" class="block hover:text-white cursor-pointer">Reports</a>
+                <a href="#" class="block hover:text-white cursor-pointer">Users</a>
+                <a href="#" class="block hover:text-white cursor-pointer">Dashboard</a>
+                <a href="#" class="block hover:text-white cursor-pointer">Orders</a>
+                <a href="#" class="block hover:text-white cursor-pointer">Settings</a>
             </nav>
                 <div class="mt-70">
                 <div class="bg-white/5 backdrop-blur-xl border border-cyan-500/20 rounded-2xl
                              p-5 shadow-2xl shadow-cyan-500/20 hover:scale-105 transition duration-300">
                     <div class="text-4xl mb-3 text-center">
-                               🤖
+                    <i class="fa-solid fa-robot"></i>
                     </div>
                     <h3 class="text-cyan-400 font-bold text-center">Quantum AI</h3>
                     <p class="text-gray-300 text-sm text-center mt-2">Analytics Assistant Active</p>
@@ -57,7 +69,7 @@
                                   border border-cyan-500/20 focus:border-cyan-400" 
                     type="text" placeholder="search...">
 
-                <span class="text-2xl">🔔</span>
+                <span class="text-2xl"><i class="fa-regular fa-bell"></i></span>
                 <span class="w-10 h-10 bg-gradient-to-r from-cyan-400 to blue-500 
                              shadow-lg shadow-cyan-500/50 rounded-full "></span>
                 </div>
