@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUANTIX ANALYTICS</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/beb9c9acc8.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="bg-gradient-to-br from-gray-950 via-slate-900 to black text-white flex-wrap">
     <div class="flex h-screen">
 
         <!--Sidebar-->
-        <aside id="sidebar" class="w-64 bg-black/40 blackdrop-blur-xl border-r border-cyan-500/20 p-2 hidden md:block">
+        <aside id="sidebar" class="w-64 bg-black/40 blackdrop-blur-xl border-r border-cyan-500/20 p-2">
             <h1 class="text-3xl font-extrabold text-cyan-400 drop-shadow-lg drop-shadow-lg">
                 QUANTIX
             </h1>
             
             <nav class="space-y-3 text-gray-300 mt-6 p-3">
+                <button id="menu-btn" class="md-bidden text-whiet text-3xl z-50">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <p class="hover:text-white cursor-pointer">Dashboard</p>
                 <p class="hover:text-white cursor-pointer">Analytics</p>
                 <p class="hover:text-white cursor-pointer">Reports</p>
