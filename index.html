@@ -3,46 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Register</title>
+    <title>Quantix Analytics - Welcome</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/beb9c9acc8.js" crossorigin="anonymous"></script>
-
 </head>
-<body class="bg-gradient-to-br from-gray-950 via-slate-900 to-black text-black h-screen flex items-center justify-center p-4">
-        <input type="checkbox" id="form-swap" class="hidden peer">
+<body class="bg-gradient-to-br from-gray-950 via-slate-900 to-black text-white min-h-screen flex flex-col justify-between">
 
-    <section class="container mx-auto py-12 flex items-center justify-center ">
-<div class="w-full max-w-lg border border-cyan-500/20 p-8 bg-gray-900/80 backdrop-blur-xl flex flex-col items-center ring-1 ring-cyan-500/30 rounded-2xl shadow-2xl text-white grid grid-cols-1">       
-     <h2 class="text-5xl font-bold mr-40 mb-20 text-white">QUANTAX Analytics</h2>
-        <div>
-            <form class="">
-                <label class="mr-30 font-bold ">Email/Username</label>
-                <input class="border border-gray-900 rounded-xl w-90 p-5 mt-4 mr-9 shadow-xl block mb-5" type="Enter Email" placeholder="Enter Your Email Address/Username" required>
-                <label class="font-bold">Password</label>
-                <input class="border border-gray-900 rounded-xl w-90 p-5 mr-9 shadow-xl cursor-pointer" type="password" placeholder="Ener your Password" required>
-                <p class="cursor-pointer ml-60 mt-5">Forgot Password?</p>
-                <a href="dashboard.html" class="mt-5 block w-full text-center bg-black text-white font-bold py-3 rounded-xl shadow-lg shadow-purple-500/20 hover:opacity-90 transition cursor-pointer">
-                    Login
-                </a>                
-                <p class="flex justify-center mt-8">or continue with</p>
+    <header class="p-6 max-w-7xl w-full mx-auto flex justify-between items-center border-b border-cyan-500/10">
+        <h1 class="text-2xl font-extrabold text-cyan-400 tracking-wider">QUANTIX</h1>
+        <a href="register.html" class="px-5 py-2 rounded-xl border border-cyan-500/30 hover:border-cyan-400 text-sm transition">
+            Sign In
+        </a>
+    </header>
 
-                <div class="flex justify-between p-1 mt-7 text-6xl cursor-pointer">
-                     <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-apple"></i>
-                 </div>
+    <main class="max-w-4xl mx-auto text-center px-6 my-20 space-y-6">
+        
+        
+        <h2 class="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+            Analytics built for the <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">future.</span>
+        </h2>
+        
+        <p class="text-gray-400 text-base md:text-lg max-w-xl mx-auto">
+            Track your revenue, user engagement, and system performance inside one incredibly clean, distraction-free interface.
+        </p>
 
-                <div class="flex justify-between mt-10">
-                     <p class="ml-50">New operator?</p>
-                     <a href="register.html"><p class="text-blue-400 cursor-pointer"> create an account</a>
-                             
-                   </p>  
-                </div>
-            </form>
-            
+        <div class="pt-4">
+            <a href="register.html" class="px-8 py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 to-purple-500 hover:scale-105 transition shadow-lg shadow-cyan-500/20 inline-block">
+                Launch Application <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
         </div>
-      </div>
+    </main>
+
+    <section class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 mb-20">
+        <div class="bg-white/5 border border-cyan-500/10 p-6 rounded-2xl">
+            <div class="text-cyan-400 text-2xl mb-3"><i class="fa-solid fa-moon"></i></div>
+            <h3 class="font-bold text-lg mb-1">Sleek Dark Theme</h3>
+            <p class="text-gray-400 text-sm">Designed to reduce eye strain with smooth, premium gradient dark modes.</p>
+        </div>
+
+        <div class="bg-white/5 border border-cyan-500/10 p-6 rounded-2xl">
+            <div class="text-purple-400 text-2xl mb-3"><i class="fa-solid fa-chart-simple"></i></div>
+            <h3 class="font-bold text-lg mb-1">Real-time Metrics</h3>
+            <p class="text-gray-400 text-sm">Keep full visibility over your revenue, active users, and system transactions instantly.</p>
+        </div>
+
+        <div class="bg-white/5 border border-cyan-500/10 p-6 rounded-2xl">
+            <div class="text-emerald-400 text-2xl mb-3"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3 class="font-bold text-lg mb-1">Mobile Responsive</h3>
+            <p class="text-gray-400 text-sm">A layout that flows effortlessly from massive desktop setups straight down to your phone.</p>
+        </div>
     </section>
-    
+
 </body>
 </html>
