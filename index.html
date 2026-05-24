@@ -11,28 +11,27 @@
     <div class="flex h-screen"> 
                
         <!--Hamburger section-->
-       <div class="text-3xl text-white">
-             <button id="menu-btn" class="md:hidden flex flex-col gap-1 z-50">
-                    <i class="fa-solid fa-bars"></i>
-                 </button>
-        </div>
-         <!--Sidebar-->
-        <aside id="sidebar" class="hidden peer-checked:block md:block w-64 bg-black/40 backdrop-blur-xl 
-                   border-r border-cyan-500/20 p-6 fixed md:sticky top-0 h-screen z-40 overflow-y-auto">
-           
-            <h1 class="text-3xl font-extrabold text-cyan-400 drop-shadow-lg drop-shadow-lg">
-                QUANTIX
-            </h1>
-            
-            <nav class="space-y-3 text-gray-300 mt-6 p-4">
-                <div class="max-w-6xl mx-auto flex justify-between items-center relative"></div>
-                <a href="#" class="block hover:text-white cursor-pointer">Analytics</a>
-                <a href="#" class="block hover:text-white cursor-pointer">Reports</a>
-                <a href="#" class="block hover:text-white cursor-pointer">Users</a>
-                <a href="#" class="block hover:text-white cursor-pointer">Dashboard</a>
-                <a href="#" class="block hover:text-white cursor-pointer">Orders</a>
-                <a href="#" class="block hover:text-white cursor-pointer">Settings</a>
-            </nav>
+       <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+<label for="menu-toggle" class="md:hidden fixed top-4 left-4 z-50 text-2xl text-white cursor-pointer">
+    <i class="fa-solid fa-bars"></i>
+</label>
+
+<aside id="sidebar" class="hidden peer-checked:block md:block w-64 bg-black/40 backdrop-blur-xl 
+           border-r border-cyan-500/20 p-6 fixed md:sticky top-0 h-screen z-40 overflow-y-auto">
+   
+    <h1 class="text-3xl font-extrabold text-cyan-400 drop-shadow-lg">
+        QUANTIX
+    </h1>
+    
+    <nav class="space-y-3 text-gray-300 mt-9 p-4">
+        <a href="#dashboard" class="block hover:text-white cursor-pointer">Dashboard</a>
+        <a href="#analytics" class="block hover:text-white cursor-pointer">Analytics</a>
+        <a href="#reports" class="block hover:text-white cursor-pointer">Reports</a>
+        <a href="#users" class="block hover:text-white cursor-pointer">Users</a>
+        <a href="#settings" class="block hover:text-white cursor-pointer">Settings</a>
+    </nav>
+
                 <div class="mt-50">
                 <div class="bg-white/5 backdrop-blur-xl border border-cyan-500/20 rounded-2xl
                              p-5 shadow-2xl shadow-cyan-500/20 hover:scale-105 transition duration-300">
