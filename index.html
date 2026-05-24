@@ -3,154 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUANTIX ANALYTICS</title>
+    <title>Login & Register</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/beb9c9acc8.js" crossorigin="anonymous"></script>
+
 </head>
-<body class="bg-gradient-to-br from-gray-950 via-slate-900 to-black text-white flex-wrap">
-    <div class="flex h-screen"> 
-               
-        <!--Hamburger section-->
-       <input type="checkbox" id="menu-toggle" class="hidden peer">
+<body class="bg-gradient-to-br from-gray-950 via-slate-900 to-black text-black h-screen flex items-center justify-center p-4">
+        <input type="checkbox" id="form-swap" class="hidden peer">
 
-<label for="menu-toggle" class="md:hidden fixed top-4 left-4 z-50 text-2xl text-white cursor-pointer">
-    <i class="fa-solid fa-bars"></i>
-</label>
+    <section class="container mx-auto py-12 flex items-center justify-center ">
+<div class="w-full max-w-lg border border-cyan-500/20 p-8 bg-gray-900/80 backdrop-blur-xl flex flex-col items-center ring-1 ring-cyan-500/30 rounded-2xl shadow-2xl text-white grid grid-cols-1">       
+     <h2 class="text-5xl font-bold mr-40 mb-20 text-white">QUANTAX Analytics</h2>
+        <div>
+            <form class="">
+                <label class="mr-30 font-bold ">Email/Username</label>
+                <input class="border border-gray-900 rounded-xl w-90 p-5 mt-4 mr-9 shadow-xl block mb-5" type="Enter Email" placeholder="Enter Your Email Address/Username" required>
+                <label class="font-bold">Password</label>
+                <input class="border border-gray-900 rounded-xl w-90 p-5 mr-9 shadow-xl cursor-pointer" type="password" placeholder="Ener your Password" required>
+                <p class="cursor-pointer ml-60 mt-5">Forgot Password?</p>
+                <a href="dashboard.html" class="mt-5 block w-full text-center bg-black text-white font-bold py-3 rounded-xl shadow-lg shadow-purple-500/20 hover:opacity-90 transition cursor-pointer">
+                    Login
+                </a>                
+                <p class="flex justify-center mt-8">or continue with</p>
 
-<aside id="sidebar" class="hidden peer-checked:block md:block w-64 bg-black/40 backdrop-blur-xl 
-           border-r border-cyan-500/20 p-6 fixed md:sticky top-0 h-screen z-40 overflow-y-auto">
-   
-    <h1 class="text-3xl font-extrabold text-cyan-400 drop-shadow-lg">
-        QUANTIX
-    </h1>
-    
-    <nav class="space-y-3 text-gray-300 mt-9 p-4">
-        <a href="#dashboard" class="block hover:text-white cursor-pointer">Dashboard</a>
-        <a href="#analytics" class="block hover:text-white cursor-pointer">Analytics</a>
-        <a href="#reports" class="block hover:text-white cursor-pointer">Reports</a>
-        <a href="#users" class="block hover:text-white cursor-pointer">Users</a>
-        <a href="#settings" class="block hover:text-white cursor-pointer">Settings</a>
-    </nav>
+                <div class="flex justify-between p-1 mt-7 text-6xl cursor-pointer">
+                     <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-apple"></i>
+                 </div>
 
-                <div class="mt-50">
-                <div class="bg-white/5 backdrop-blur-xl border border-cyan-500/20 rounded-2xl
-                             p-5 shadow-2xl shadow-cyan-500/20 hover:scale-105 transition duration-300">
-                    <div class="text-4xl mb-3 text-center">
-                    <i class="fa-solid fa-robot"></i>
-                    </div>
-                    <h3 class="text-cyan-400 font-bold text-center">Quantum AI</h3>
-                    <p class="text-gray-300 text-sm text-center mt-2">Analytics Assistant Active</p>
-                    
-                    <button class="w-full mt-4 py-2 rounded-xl hover:opacity-90 transition
-                     bg-gradient-to-r from-cyan-500 to-purple-500 ">
-                     Active AI
-                    </button>
+                <div class="flex justify-between mt-10">
+                     <p class="ml-50">New operator?</p>
+                     <a href="register.html"><p class="text-blue-400 cursor-pointer"> create an account</a>
+                             
+                   </p>  
                 </div>
-            </div>
+            </form>
             
-        </aside>
-
-        <!--Main Area-->
-        <main class="flex-1 p-6 space-y-6 overflow-y-auto">
-
-            <!--Top Bar-->
-            <div>
-                <h2 class="text-xl font-semibold">
-                    Dashboard Overview
-                </h2>
-                <div class="flex gap-3 items-center">
-                    <input class="px-4 py-2 rounded bg-gray-900 text-sm outline-none mt-5 
-                                  border border-cyan-500/20 focus:border-cyan-400" 
-                    type="text" placeholder="search...">
-
-                <span class="text-2xl"><i class="fa-regular fa-bell"></i></span>
-                <span class="w-10 h-10 bg-gradient-to-r from-cyan-400 to blue-500 
-                             shadow-lg shadow-cyan-500/50 rounded-full "></span>
-                </div>
-            </div>
-
-           <!--Cards--> 
-           <div id="dashboard" class="grid grid-cols-1 md:grid-cols-4 gap-6">
-
-            <div class="bg-gray-900 p-4 rounded-xl hover:scale-105 transition duration-300">
-                <p class="text-gray-400">Revenue</p>
-                <h3 class="font-bold text-2xl text-green-400">$24,500</h3>
-            </div>
-
-            <div class="bg-gray-900 p-4 rounded-xl hover:scale-105 transition duration-300">
-                <p class="text-gray-400">Active Users</p>
-                <h3 class="text-2xl text-cyan-400 font-bold ">1,240</h3>
-            </div>
-
-            <div class="bg-gray-900 rounded-xl p-4 hover:scale-105 transition duration-300">
-                <p class="text-gray-400 ">Transactions</p>
-                <h3 class="font-bold text-2xl text-yellow-400">3,890</h3>
-            </div>
-
-            <div class="bg-gray-900 rounded-xl p-4 hover:scale-105 transition duration-300">
-                <p class="text-gray-400">Growth</p>
-                <h3 class="font-bold text-2xl text-pink-400">+12%</h3>
-            </div>
-
-           </div>
-
-           <!-- activity chart-->
-           <div id="analytics" class="grid grid-col-1 lg:grid-cols-3 gap-6">
-
-            <!--chart area-->
-            <div class="lg:col-span-2 bg-gray-900 p-6 rounded-xl h-80">
-
-                <h3 class="mb-4 font-semibold">
-                   Monthly  Performance Overview
-                </h3>
-                <div class="flex items-end gap-2 h-52 overflow-x-auto">
-                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-32 text-black">Jan</div>
-                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-52 text-black">Feb</div>
-                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-40 text-black">March</div>
-                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-57 text-black ">April</div>
-                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-48 text-black">May</div>
-                </div>
-            </div>
-
-            <!--Activity feed-->
-            <div class="bg-gray-900 p-6 rounded-xl">
-                <h3 class="font-semibold mb-4">
-                    Live Activity
-                </h3>
-                <ul class="space-y-3 text-sm text-gray-300">
-                    <li class="text-cyan-400 transition">New user registered</li>
-                    <li class="text-cyan-400 transition">Payment received $120</li>
-                    <li class="text-cyan-400 transition">Revenue spike detected</li>
-                    <li class="text-cyan-400 transition">High traffic alart</li>
-                    <li class="text-cyan-400 transition">Admin login detected</li>
-                </ul>
-            </div>
-           </div>
-
-           <!--system status-->
-           <div id="settings" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-gray-900/70 p-6 rounded-2xl border border-cyan-500/20 
-                    shadow-lg shadow-cyan-500/10">
-                <p class="text-gray-400">Server</p>
-                <p class="text-green-400 font-bold">ONLINE</p>
-            </div>
-
-            <div class="bg-gray-900/70 p-6 rounded-2xl border border-cyan-500/20
-                    shadow-lg shadow-cyan-500/10">
-                <p class="text-gray-400">Memory Usage</p>
-                <p class="text-yellow-400">78%</p>
-            </div>
-
-            <div class="bg-gray-900/70 p-6 rounded-2xl border border-cyan-500/20 
-                    shadow-lg shadow-cyan-500/10">
-                <p class="text-gray-400">Uptime</p>
-                <p class="text-cyan-400 font-bold">99.9%</p>
-            </div>
-
-           </div>
-
-
-        </main>
-    </div>
+        </div>
+      </div>
+    </section>
+    
 </body>
 </html>

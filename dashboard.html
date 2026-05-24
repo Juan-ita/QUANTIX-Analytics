@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUANTIX ANALYTICS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/beb9c9acc8.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-950 via-slate-900 to-black text-white flex-wrap">
+    <div id="dark" class="flex h-screen w-full bg-gradient-to-br from-gray-950 to black text-white target:from-gray-100 target:via-slate-50 target:to-white target:text-slate-900 transition-colors duration-300 "> 
+               
+        <!--Hamburger section-->
+       <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+<label for="menu-toggle" class="md:hidden fixed top-4 left-4 z-50 text-2xl text-white cursor-pointer">
+    <i class="fa-solid fa-bars"></i>
+</label>
+
+<aside id="sidebar" class="hidden peer-checked:block md:block w-64 bg-black/40 backdrop-blur-xl 
+           border-r border-cyan-500/20 p-6 fixed md:sticky top-0 h-screen z-40 overflow-y-auto">
+   
+    <h1 class="text-3xl font-extrabold text-cyan-400 drop-shadow-lg mt-4">
+        QUANTIX
+    </h1>
+    <a href="#dark" class="block text-xs font-mono tracking-wider tet-gray-400 hover:text-cyan-400 mt-6 bg-white/5 p-2 rounded-xl text-center">
+        <i class="fa-solid fa-sun"></i>SWITCH TO LIGHT MODE
+    </a>
+    <a href="#" class="block text-xs font-mono tracking-wider tet-gray-400 hover:text-cyan-400 mt-6 bg-white/5 p-2 rounded-xl text-center">
+      <i class="fa-solid fa-moon"></i>SWITCH TO DARK MODE
+    </a>
+    <nav class="space-y-3 text-gray-300 mt-9 p-4">
+        <a href="#dashboard" class="block hover:text-white cursor-pointer">Dashboard</a>
+        <a href="#analytics" class="block hover:text-white cursor-pointer">Analytics</a>
+        <a href="#reports" class="block hover:text-white cursor-pointer">Reports</a>
+        <a href="#users" class="block hover:text-white cursor-pointer">Users</a>
+        <a href="#settings" class="block hover:text-white cursor-pointer">Settings</a>
+    </nav>
+
+                <div class="mt-10">
+                <div class="bg-white/5 backdrop-blur-xl border border-cyan-500/20 rounded-2xl
+                             p-5 shadow-2xl shadow-cyan-500/20 hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-3 text-center">
+                    <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-cyan-400 font-bold text-center">Quantum AI</h3>
+                    <p class="text-gray-300 text-sm text-center mt-2">Analytics Assistant Active</p>
+                    
+                    <button class="w-full mt-4 py-2 rounded-xl hover:opacity-90 transition
+                     bg-gradient-to-r from-cyan-500 to-purple-500 ">
+                     Active AI
+                    </button>
+                   
+                </div>
+                <a href="index.html" class="block text-gray-400 hover:text-red-400 mt-2 text-sm">
+                        <i class="fa-solid fa-right-from-bracket mr-2"></i> Log Out
+                   </a>
+            </div>
+            
+        </aside>
+
+        <!--Main Area-->
+        <main class="flex-1 p-6 space-y-6 overflow-y-auto">
+
+            <!--Top Bar-->
+            <div class="mt-8">
+                <h2 class="text-xl font-semibold">
+                    Dashboard Overview
+                </h2>
+                <div class="flex gap-3 items-center">
+                    <input class="px-4 py-2 rounded bg-gray-900 text-sm outline-none mt-5 
+                                  border border-cyan-500/20 focus:border-cyan-400" 
+                    type="text" placeholder="search...">
+
+                <span class="text-2xl"><i class="fa-regular fa-bell"></i></span>
+                <span class="w-10 h-10 bg-gradient-to-r from-cyan-400 to blue-500 
+                             shadow-lg shadow-cyan-500/50 rounded-full "></span>
+                </div>
+            </div>
+
+           <!--Cards--> 
+           <div id="dashboard" class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+            <div class="bg-gray-900 p-4 rounded-xl hover:scale-105 transition duration-300">
+                <p class="text-gray-400">Revenue</p>
+                <h3 class="font-bold text-2xl text-green-400">$24,500</h3>
+            </div>
+
+            <div class="bg-gray-900 p-4 rounded-xl hover:scale-105 transition duration-300">
+                <p class="text-gray-400">Active Users</p>
+                <h3 class="text-2xl text-cyan-400 font-bold ">1,240</h3>
+            </div>
+
+            <div class="bg-gray-900 rounded-xl p-4 hover:scale-105 transition duration-300">
+                <p class="text-gray-400 ">Transactions</p>
+                <h3 class="font-bold text-2xl text-yellow-400">3,890</h3>
+            </div>
+
+            <div class="bg-gray-900 rounded-xl p-4 hover:scale-105 transition duration-300">
+                <p class="text-gray-400">Growth</p>
+                <h3 class="font-bold text-2xl text-pink-400">+12%</h3>
+            </div>
+
+           </div>
+
+           <!-- activity chart-->
+           <div id="analytics" class="grid grid-col-1 lg:grid-cols-3 gap-6">
+
+            <!--chart area-->
+            <div class="lg:col-span-2 bg-gray-900 p-6 rounded-xl h-80">
+
+                <h3 class="mb-4 font-semibold #dark:target:text-black">
+                   Monthly  Performance Overview
+                </h3>
+                <div class="flex items-end gap-2 h-52 overflow-x-auto">
+                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-32 text-black">Jan</div>
+                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-52 text-black">Feb</div>
+                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-40 text-black">March</div>
+                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-57 text-black ">April</div>
+                    <div class="bg-cyan-400 shadow-lg shadow-cyan-400/50 rounded-t-lg p-6 h-48 text-black">May</div>
+                </div>
+            </div>
+
+            <!--Activity feed-->
+            <div class="bg-gray-900 p-6 rounded-xl">
+                <h3 class="font-semibold mb-4">
+                    Live Activity
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="text-cyan-400 transition">New user registered</li>
+                    <li class="text-cyan-400 transition">Payment received $120</li>
+                    <li class="text-cyan-400 transition">Revenue spike detected</li>
+                    <li class="text-cyan-400 transition">High traffic alart</li>
+                    <li class="text-cyan-400 transition">Admin login detected</li>
+                </ul>
+            </div>
+           </div>
+
+           <!--system status-->
+           <div id="settings" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-900/70 p-6 rounded-2xl border border-cyan-500/20 
+                    shadow-lg shadow-cyan-500/10">
+                <p class="text-gray-400">Server</p>
+                <p class="text-green-400 font-bold">ONLINE</p>
+            </div>
+
+            <div class="bg-gray-900/70 p-6 rounded-2xl border border-cyan-500/20
+                    shadow-lg shadow-cyan-500/10">
+                <p class="text-gray-400">Memory Usage</p>
+                <p class="text-yellow-400">78%</p>
+            </div>
+
+            <div class="bg-gray-900/70 p-6 rounded-2xl border border-cyan-500/20 
+                    shadow-lg shadow-cyan-500/10">
+                <p class="text-gray-400">Uptime</p>
+                <p class="text-cyan-400 font-bold">99.9%</p>
+            </div>
+
+           </div>
+
+
+        </main>
+    </div>
+</body>
+</html>
