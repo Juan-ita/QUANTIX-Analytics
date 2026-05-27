@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantix - Security Reports</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/beb9c9acc8.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-950 text-white md:flex min-h-screen">
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+<label for="menu-toggle" class="md:hidden fixed top-4 left-4 z-50 text-2xl text-white cursor-pointer ">
+    <i class="fa-solid fa-bars"></i>
+</label>
+    <div id="dark" class="flex h-screen w-full bg-gradient-to-br from-gray-950 to black text-white target:from-gray-100 target:via-slate-50 target:to-white target:text-slate-900 transition-colors duration-300 "> 
+
+   <aside id="sidebar" class="hidden peer-checked:block md:block w-64 bg-black/40 backdrop-blur-xl 
+           border-r border-cyan-500/20 p-6 fixed md:sticky top-0 h-screen z-40 overflow-y-auto">
+   
+    <h1 class="text-3xl font-extrabold text-cyan-400 drop-shadow-lg mt-4">
+        QUANTIX
+    </h1>
+    <a href="#dark" class="block text-xs font-mono tracking-wider tet-gray-400 hover:text-cyan-400 mt-6 bg-white/5 p-2 rounded-xl text-center">
+        <i class="fa-solid fa-sun"></i>SWITCH TO LIGHT MODE
+    </a>
+    <a href="#" class="block text-xs font-mono tracking-wider tet-gray-400 hover:text-cyan-400 mt-6 bg-white/5 p-2 rounded-xl text-center">
+      <i class="fa-solid fa-moon"></i>SWITCH TO DARK MODE
+    </a>
+    <nav class="space-y-3 text-gray-300 mt-9 p-4">
+        <a href="dashboard.html" class="block hover:text-white cursor-pointer"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+        <a  href="#analytics" class="block hover:text-white cursor-pointer" > <i class="fa-solid fa-chart-area"></i> Analytics </a>
+        <a href="#reports" class="block hover:text-white cursor-pointer"> <i class="fa-solid fa-database"></i> Reports</a>
+        <a href="users.html" class="block hover:text-white cursor-pointer"><i class="fa-solid fa-users-gear"></i> Users</a>
+        <a href="#settings" class="block hover:text-white cursor-pointer"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+
+                <div class="mt-10">
+                <div class="bg-white/5 backdrop-blur-xl border border-cyan-500/20 rounded-2xl
+                             p-5 shadow-2xl shadow-cyan-500/20 hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-3 text-center">
+                    <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-cyan-400 font-bold text-center">Quantum AI</h3>
+                    <p class="text-gray-300 text-sm text-center mt-2">Analytics Assistant Active</p>
+                    
+                    <button class="w-full mt-4 py-2 rounded-xl hover:opacity-90 transition
+                     bg-gradient-to-r from-cyan-500 to-purple-500 ">
+                     Active AI
+                    </button>
+                   
+                </div>
+                <a href="index.html" class="block text-gray-400 hover:text-red-400 mt-2 text-sm">
+                        <i class="fa-solid fa-right-from-bracket mr-2"></i> Log Out
+                   </a>
+            </div>
+            
+        
+    </aside>
+   <main class="flex-1 p-6 md:p-8 overflow-x-auto">
+    <section class="flex justify-between space-y-8 overflow-y-auto p-3">
+        <div>
+            <h1 class="text-3xl font-bold tracking-tight mt-7">Security & Data Reports</h1>
+            <p class="text-gray-400 text-sm">Generate, audit and download comprehensive address book logs.</p>
+        </div>
+        <div class="text-sm border border-white mb-23 rounded-full px-4 py-1 bg-white/5vtext-gray-400">
+            System status <span class="text-emerald-400 text-sm font-mono animate-pulse">● live</span>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-1 xl:grid-cols-2 gap-6 items-start ml-5">
+        <div class="bg-white/5 border border-cyan-500/10 shadow-cyan-500 shadow-md backdrop-blur-xl rounded-3xl p-6">
+            <h3 class="text-lg font-bold ">Secure Data Export</h3>
+            <p class="text-gray-400 text-sm">Package and securely extracted database logs into localized offline files</p>
+       
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="bg-white/5 rounded-xl px-4 py-5 mb-7 mt-5 border border-gray-700 backdrop-blur-xl mr-5 hover:border-cyan-500/40 transition group cursor-pointer ">
+                    <i class="fa-solid fa-file-csv text-cyan-400 text-3xl mb-2 group-hover:scale-110 ml-25 "></i>
+                    <h4 class="font-black text-sm ml-15">Clean Contact List</h4>
+                 <p class="text-xs text-gray-400 mt-1 ml-8">Export sanitixed profiles as .CSV</p>
+                </div>
+       
+                 <div class="bg-white/5 rounded-xl px-4 py-5 mb-7 mt-5 border border-gray-700 backdrop-blur-xl hover:border-purple-500/40 transition group cursor-pointer">
+                    <i class="fa-solid fa-shield text-3xl ml-25 text-purple-400 group-hover:scale-110"></i>
+                <h4 class="font-bold text-md ml-15 ">Security Audit Log</h4>
+                <p class="text-gray-400 text-sm mt-1 ml-8">Export full threat history as .PDF</p>
+                 </div> 
+             </div>
+        </div>
+
+        <div class="mt-5  bg-white/5 border border-gray-700 shadow-md shadow-cyan-500 flex justify-between rounded-3xl p-6 backdrop-blur-xl flex-col">
+            <div>
+                <h3 class="font-bold text-xl ">Complience Check</h3>
+                <p class="text-sm text-gray-400 ">System score based on global security protocol architectures</p>
+            </div>
+            <div class="mt-6 bg-white/5 p-5 flex items-center gap-6 p-4 rounded-2xl border border-white/5">
+                <div class="text-emerald-400 bg-emerald-500/5 font-bold rounded-xl text-4xl px-2 py-2 px-4">A+</div>
+                <div>
+                     <h4 class="font-bold text-sm ">Privacy Law Status</h4>
+                    <p class="text-gray-400 text-xs">Your directory system currently passes 100% of encrypted standard audits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white/5 border border-gray-700 mt-8 rounded-3xl p-6 shadow-cyan-500 shadow-md backdrop-blur-md">
+        <h3 class="font-bold text-xl mb-1">Recent Incident Report History</h3>
+        <p class="text-gray-400 text-sm mb-6">Archaived baseline matrix ledger for tracking blocked system intrusion</p>
+
+        <div class="overflow-x-auto text-gray-400">
+            <table class="w-full text-left border-collapse">
+                <thead >
+                    <tr class="border-b border-white/9 text-sm font-mono uppercase tracking-wider">
+                       <th class="pb-3 font-bold">Timestamp / Date</th>
+                       <th class="pb-3 font-bold">Incident Parameter</th>
+                       <th class="pb-3 font-bold">Severity Rating</th>
+                       <th class="pb-3 font-bold">Action Diagnostics</th>
+
+                    </tr>
+                </thead>
+                  <tbody class="text-sm divide-y divide-white/9 text-slate-300">
+                    <tr>
+                      <td>2026/05/20 12:34</td>
+                      <td class="py-4 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400 shadow-md shadow-cyan-400"></span>Bulk Spam</td>
+                      <td class="text-cyan-500 font-bold">LOW</td>
+                      <td >412 Accounts Blocked</td>
+                  </tr>
+                  <tr>
+                      <td>2025/12/09 07:11</td>
+                      <td class="py-4 gap-4 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-purple-400 shadow-purple-300 shadow-md"></span>Phidhed Email Attachment</td>
+                      <td class="text-purple-400 font-bold">MEDIUM</td>
+                      <td>18 Targets Isolated</td>
+                  </tr>
+                  <tr>
+                      <td>2025/06/29 22:07</td>
+                      <td class="py-4 gap-4 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400 shadow-emerald-500 shadow-md"></span>Foreign Server Sync Attempt</td>
+                      <td class="text-emerald-400 font-bold">NEUTRAL</td>
+                      <td>0 intrusion Success</td>
+                   </tr>
+                 </tbody>    
+            </table>
+        </div>
+    </section>
+
+    <div>
+        <a href="dashboard.html" class="font-bold hover:text-red-600">Exit Panel<i class="fa-solid fa-right-from-bracket mr-9 text-xl text-white mt-5 hover:text-red-600"></i></a>
+    </div>
+   </main>
+
+</body>
+</html>
