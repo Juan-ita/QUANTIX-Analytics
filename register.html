@@ -11,26 +11,27 @@
      <section class="w-full max-w-lg bg-gradient-to-br from-blue-900/70 via-gray-800 to-cyan-900/20  rounded-2xl">
 
         <div>
-            <form class="m-5">
+            <form id="register-form" class="m-5">
                 <h3 class="text-2xl font-bold text-purple-400 ">Create an Acount</h3> <br><br>
-                <label class="mb-20 font-medium mt-4">Username</label>
-                <input class="px-4 py-3 w-full max-w-md border-gray-900 p-4 rounded-xl block mb-5 w-90" type="Name" placeholder="Create username" required>
-                <label class="mb-20 font-medium mt-4">Emali </label>
-                <input class="px-4 py-3 w-full max-w-md border border-gray-900 rounded-xl p-4 block mb-5 w-90" type="Email" placeholder="name@gmail.com" required>
-                <label class="mb-20 font-medium mt-4">Create Password</label>
-                <input class="px-4 py-3 w-full max-w-md border border-gray-900 rounded-xl p-4 block mb-5 w-90" type="password" placeholder="Enter a Strong Password" required>
-         <a href="dashboard.html" class="block w-full text-center bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-bold py-3 rounded-xl shadow-lg shadow-purple-500/20 hover:opacity-90 transition cursor-pointer">
+                <label  class="mb-20 font-medium mt-4">Username</label>
+                <input id="user-name" class="px-4 py-3 w-full max-w-md border border-gray-900 p-4 rounded-xl block mb-5 w-90" type="Name" placeholder="Create username" required>
+                <label  class="mb-20 font-medium mt-4">Emali </label>
+                <input id="user-email" class="px-4 py-3 w-full max-w-md border border-gray-900 rounded-xl p-4 block mb-5 w-90" type="Email" placeholder="name@gmail.com" required>
+                <label  class="mb-20 font-medium mt-4">Create Password</label>
+                <input id="user-password" class="px-4 py-3 w-full max-w-md border border-gray-900 rounded-xl p-4 block mb-5 w-90" type="password" placeholder="Enter a Strong Password" required>
+         <button type="submit"
+                class="block w-full text-center bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-bold py-3 rounded-xl shadow-lg shadow-purple-500/20 hover:opacity-90 transition cursor-pointer">
              Register Now
-         </a>                   
+         </button>                   
             </form>
             
-                <a href="login.html"><h2 class="mt-10 flex justify-center cursor-pointer">Already have an account</a>
+                <a href="login.html"><h2 class="mt-10 pb-4 flex justify-center cursor-pointer hover:text-blue-500">Already have an account</a>
             </h2>
         </div>
      </section>   
     
     
         
-          
+          <script src="register.js"></script>
 </body>
 </html>
